@@ -18,7 +18,7 @@ gsap.from('#name_sm', {
 gsap.from('#buttonWrap', {
     opacity: 0,
     duration: 1.75,
-    x: 50
+    x: -50
 })
 gsap.from('#main_circle', {
     opacity: 0,
