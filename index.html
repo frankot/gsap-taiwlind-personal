@@ -12,32 +12,39 @@
 <body class="text-gray-100 font-custom">
     <div class=" h-max" id="PageWrap">
         <div class="h-screen w-screen bg-[#082032] relative" id="panel1">
-            <div class="absolute bg-gradient-to-bl from-red-400 to-yellow-600 h-96 w-96 circle top-12 left-[24%] blur-lg opacity-40"
-                id="under_circle"> </div>
-            <div class="absolute bg-gradient-to-tr from-purple-600 to-yellow-300 h-96 w-96 circle top-11 left-1/4 "
-                id="main_circle">
-                <div
-                    class="circle absolute bg-gradient-to-bl from-gray-200 to-indigo-800 h-80 w-80 top-11 left-2 opacity-70">
+            <div class="absolute sm:left-20 sm:bottom-3/4 md:left-56 md:bottom-3/4">
+                <div class="absolute bg-gradient-to-bl from-red-400 to-yellow-600 h-96 w-96 circle top-12 left-[24%] blur-lg opacity-40"
+                    id="under_circle"> </div>
+                <div class="absolute bg-gradient-to-tr from-purple-600 to-yellow-300 h-96 w-96 circle top-11 left-1/4 "
+                    id="main_circle">
                     <div
-                        class="circle absolute bg-gradient-to-tl from-pink-300 opacity-90 h-60 w-60 right-8 -top-3 blur-md">
+                        class="circle absolute bg-gradient-to-bl from-gray-200 to-indigo-800 h-80 w-80 top-11 left-2 opacity-70">
+                        <div
+                            class="circle absolute bg-gradient-to-tl from-pink-300 opacity-90 h-60 w-60 right-8 -top-3 blur-md">
+                        </div>
                     </div>
                 </div>
             </div>
-            <section class="">
-                <div class="absolute md:bottom-40 md:left-11 md:ml-8 lg:bottom-1/3 lg:left-[15%]">
-                    <h3 class="md:text-sm lg:text-base font-light  mb-12 opacity-80 md:tracking-widest lg:tracking-wider" id="name">Franciszek Otrębski
-                    </h3>
-                    <div class="md:text-2xl md:leading-relaxed  lg:text-4xl lg:leading-normal  lg:tracking-tight opacity-90" id="text">
-                        <h1>I'm human being and a web developer</h1>
-                        <p>Retired drug dealer, breath lover </p>
-                        <p>We can help each other</p>
-                    </div>
+
+            <div class="absolute bottom-20  sm:bottom-10 md:bottom-28 md:left-11 md:ml-8 lg:bottom-1/3 lg:left-[15%] grid grid-cols-3 sm:inline">
+                <h3 class="hidden sm:inline-block text-sm lg:text-base font-light  mb-12 opacity-80 md:tracking-widest lg:tracking-wider"
+                    id="name">Franciszek Otrębski
+                </h3>
+                <div class="sm:hidden absolute right-6 font-extralight bottom-32 rotate-90" id="name_sm">Franciszek Otrębski</div>
+                <div class="text-xl ml-16 mb-10 leading-tight sm:m-0 md:text-2xl md:leading-relaxed  lg:text-4xl lg:leading-normal  lg:tracking-tight opacity-90 col-span-2"
+                    id="text">
+                    <h1 class="mb-3 sm:m-0">I'm human being and web developer</h1>
+                    <p class="mb-6 sm:m-0">retired drug dealer, breath lover </p>
+                    <p>we can help each other</p>
                 </div>
-                <div class="flex flex-col items-end mr-20 pt-12 " id="buttonWrap">
-                    <button class="hover:text-gray-400 hover:translate-y-1 transform transition">projects</button>
-                    <button class="hover:text-gray-400 hover:translate-y-1 transform transition" id="contact"> contact </button>
-                </div>
-            </section>
+            </div>
+
+            <div class="flex flex-col items-end mr-5 pt-4 sm:mr-20 sm:pt-12 " id="buttonWrap">
+                <button class="hover:text-gray-400 hover:translate-y-1 transform transition">projects</button>
+                <button class="hover:text-gray-400 hover:translate-y-1 transform transition" id="contact"> contact
+                </button>
+            </div>
+
         </div>
         <div class="w-screen h-screen bg-[#082032]" id="panel2">
 
