@@ -719,6 +719,34 @@ html {
   bottom: 8rem;
 }
 
+.left-60{
+  left: 15rem;
+}
+
+.left-9{
+  left: 2.25rem;
+}
+
+.left-96{
+  left: 24rem;
+}
+
+.right-4{
+  right: 1rem;
+}
+
+.right-12{
+  right: 3rem;
+}
+
+.right-24{
+  right: 6rem;
+}
+
+.-top-5{
+  top: -1.25rem;
+}
+
 .col-span-2{
   grid-column: span 2 / span 2;
 }
@@ -801,6 +829,16 @@ html {
 
 .w-60{
   width: 15rem;
+}
+
+.w-min{
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.w-full{
+  width: 100%;
 }
 
 .rotate-90{
@@ -925,6 +963,11 @@ html {
   color: rgba(243, 244, 246, var(--tw-text-opacity));
 }
 
+.text-gray-50{
+  --tw-text-opacity: 1;
+  color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
 .opacity-40{
   opacity: 0.4;
 }
@@ -1037,6 +1080,29 @@ html {
     line-height: 2rem;
   }
 
+  .md\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:font-normal{
+    font-weight: 400;
+  }
+
+  .md\:font-light{
+    font-weight: 300;
+  }
+
   .md\:leading-relaxed{
     line-height: 1.625;
   }
@@ -1055,6 +1121,106 @@ html {
     left: 15%;
   }
 
+  .lg\:top-1\/3{
+    top: 33.333333%;
+  }
+
+  .lg\:left-36{
+    left: 9rem;
+  }
+
+  .lg\:left-2{
+    left: 0.5rem;
+  }
+
+  .lg\:left-20{
+    left: 5rem;
+  }
+
+  .lg\:top-2{
+    top: 0.5rem;
+  }
+
+  .lg\:top-20{
+    top: 5rem;
+  }
+
+  .lg\:top-36{
+    top: 9rem;
+  }
+
+  .lg\:top-44{
+    top: 11rem;
+  }
+
+  .lg\:top-60{
+    top: 15rem;
+  }
+
+  .lg\:bottom-0{
+    bottom: 0px;
+  }
+
+  .lg\:top-10{
+    top: 2.5rem;
+  }
+
+  .lg\:left-96{
+    left: 24rem;
+  }
+
+  .lg\:left-1\/2{
+    left: 50%;
+  }
+
+  .lg\:right-1\/2{
+    right: 50%;
+  }
+
+  .lg\:right-0{
+    right: 0px;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
+
+  .lg\:h-\[\]{
+    height: ;
+  }
+
+  .lg\:h-\[50rem\]{
+    height: 50rem;
+  }
+
+  .lg\:h-\[42rem\]{
+    height: 42rem;
+  }
+
+  .lg\:h-\[30rem\]{
+    height: 30rem;
+  }
+
+  .lg\:h-\[0rem\]{
+    height: 0rem;
+  }
+
+  .lg\:w-\[50rem\]{
+    width: 50rem;
+  }
+
+  .lg\:w-\[42rem\]{
+    width: 42rem;
+  }
+
+  .lg\:w-\[30rem\]{
+    width: 30rem;
+  }
+
+  .lg\:w-\[0rem\]{
+    width: 0rem;
+  }
+
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1063,6 +1229,11 @@ html {
   .lg\:text-4xl{
     font-size: 2.25rem;
     line-height: 2.5rem;
+  }
+
+  .lg\:text-5xl{
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .lg\:leading-normal{
@@ -1075,5 +1246,10 @@ html {
 
   .lg\:tracking-tight{
     letter-spacing: -0.025em;
+  }
+
+  .lg\:blur-3xl{
+    --tw-blur: blur(64px);
+    filter: var(--tw-filter);
   }
 }
