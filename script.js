@@ -15,15 +15,25 @@ gsap.from('#name_sm', {
     duration: 1.75,
     x: 75
 })
-gsap.from('#buttonWrap', {
+gsap.from('#button1', {
     opacity: 0,
     duration: 1.75,
     x: -50
 })
-gsap.from('#main_circle', {
+gsap.from('#button2', {
     opacity: 0,
     duration: 1.75,
-    x: 30
+    x: 50
+})
+// gsap.from('#main_circle', {
+//     opacity: 0,
+//     duration: 1.75,
+//     x: 30
+// })
+gsap.from('#circles', {
+    opacity: 0,
+    duration: 1.75,
+    y: 2
 })
 // gsap.registerPlugin(ScrollTrigger);
 // gsap.to('#main_circle', {

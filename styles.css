@@ -619,16 +619,40 @@ video {
 }
 
 .circle {
-  position: absolute;
   border-radius: 50%;
 }
 
-body {
-  overflow-x: hidden;
-}
+/* body {
+        overflow-x: hidden;
+        overflow-y: hidden
+    } */
 
 html {
   scroll-behavior: smooth;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: #082032;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .absolute{
@@ -637,6 +661,10 @@ html {
 
 .relative{
   position: relative;
+}
+
+.bottom-\[80\%\]{
+  bottom: 80%;
 }
 
 .top-12{
@@ -667,8 +695,8 @@ html {
   top: -0.75rem;
 }
 
-.bottom-20{
-  bottom: 5rem;
+.bottom-0{
+  bottom: 0px;
 }
 
 .right-6{
@@ -703,10 +731,6 @@ html {
   margin-bottom: 1.5rem;
 }
 
-.mr-5{
-  margin-right: 1.25rem;
-}
-
 .flex{
   display: flex;
 }
@@ -723,6 +747,10 @@ html {
   height: 100vh;
 }
 
+.h-72{
+  height: 18rem;
+}
+
 .h-96{
   height: 24rem;
 }
@@ -735,8 +763,8 @@ html {
   height: 15rem;
 }
 
-.w-full{
-  width: 100%;
+.w-72{
+  width: 18rem;
 }
 
 .w-96{
@@ -764,6 +792,23 @@ html {
   transform: var(--tw-transform);
 }
 
+@-webkit-keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+@keyframes pulse{
+  50%{
+    opacity: .5;
+  }
+}
+
+.animate-pulse{
+  -webkit-animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+          animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
@@ -772,8 +817,16 @@ html {
   flex-direction: column;
 }
 
-.items-end{
-  align-items: flex-end;
+.flex-col-reverse{
+  flex-direction: column-reverse;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
 }
 
 .bg-\[\#082032\]{
@@ -830,12 +883,20 @@ html {
   --tw-gradient-to: #3730a3;
 }
 
-.pt-4{
-  padding-top: 1rem;
+.pt-12{
+  padding-top: 3rem;
+}
+
+.pt-3{
+  padding-top: 0.75rem;
 }
 
 .font-custom{
   font-family: Poppins;
+}
+
+.font-mono{
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-sm{
@@ -848,12 +909,21 @@ html {
   line-height: 1.75rem;
 }
 
+.text-7xl{
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .font-light{
   font-weight: 300;
 }
 
 .font-extralight{
   font-weight: 200;
+}
+
+.font-extrabold{
+  font-weight: 800;
 }
 
 .leading-tight{
@@ -863,6 +933,16 @@ html {
 .text-gray-50{
   --tw-text-opacity: 1;
   color: rgba(249, 250, 251, var(--tw-text-opacity));
+}
+
+.text-green-700{
+  --tw-text-opacity: 1;
+  color: rgba(4, 120, 87, var(--tw-text-opacity));
+}
+
+.antialiased{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .opacity-40{
@@ -886,6 +966,11 @@ html {
   filter: var(--tw-filter);
 }
 
+.blur-sm{
+  --tw-blur: blur(4px);
+  filter: var(--tw-filter);
+}
+
 .blur-md{
   --tw-blur: blur(12px);
   filter: var(--tw-filter);
@@ -904,6 +989,23 @@ html {
   transform: var(--tw-transform);
 }
 
+@-webkit-keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.hover\:animate-spin:hover{
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
 .hover\:text-gray-400:hover{
   --tw-text-opacity: 1;
   color: rgba(156, 163, 175, var(--tw-text-opacity));
@@ -914,20 +1016,12 @@ html {
     left: 5rem;
   }
 
-  .sm\:bottom-3\/4{
-    bottom: 75%;
-  }
-
   .sm\:bottom-10{
     bottom: 2.5rem;
   }
 
   .sm\:m-0{
     margin: 0px;
-  }
-
-  .sm\:mr-20{
-    margin-right: 5rem;
   }
 
   .sm\:inline-block{
@@ -942,6 +1036,14 @@ html {
     display: none;
   }
 
+  .sm\:items-end{
+    align-items: flex-end;
+  }
+
+  .sm\:pr-20{
+    padding-right: 5rem;
+  }
+
   .sm\:pt-12{
     padding-top: 3rem;
   }
@@ -950,10 +1052,6 @@ html {
 @media (min-width: 768px){
   .md\:left-56{
     left: 14rem;
-  }
-
-  .md\:bottom-3\/4{
-    bottom: 75%;
   }
 
   .md\:bottom-28{
@@ -1032,6 +1130,10 @@ html {
     width: 30rem;
   }
 
+  .lg\:pt-7{
+    padding-top: 1.75rem;
+  }
+
   .lg\:text-base{
     font-size: 1rem;
     line-height: 1.5rem;
@@ -1040,6 +1142,11 @@ html {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 
   .lg\:leading-normal{
@@ -1054,8 +1161,15 @@ html {
     letter-spacing: -0.025em;
   }
 
-  .lg\:blur-3xl{
-    --tw-blur: blur(64px);
+  .lg\:blur-xl{
+    --tw-blur: blur(24px);
     filter: var(--tw-filter);
+  }
+}
+
+@media (min-width: 1280px){
+  .xl\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }

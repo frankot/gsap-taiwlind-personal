@@ -9,54 +9,62 @@
     <title>Document</title>
 </head>
 
-<body class="antialiased bg-[#082032] text-gray-50 font-custom">
-    
-        <div class="  relative " id="panel1">
-            <div class="" id="PageWrap">
-            <div class="absolute sm:left-20 sm:bottom-3/4 md:left-56 md:bottom-3/4 lg:top-10 lg:left-96 " id="circles">
-                <div class="absolute bg-gradient-to-bl from-red-400 to-yellow-600 h-72 w-72 lg:h-[50rem] lg:w-[50rem] circle top-12 left-[24%]  blur-lg lg:blur-3xl opacity-40"
-                    id="under_circle"> </div>
-                <div class="absolute bg-gradient-to-tr from-purple-600 to-yellow-300 h-96 w-96 lg:h-[50rem] lg:w-[50rem] circle top-11 left-1/4 "
-                    id="main_circle">
+<body class="antialiased text-gray-50 font-custom bg-[#082032]">
+
+    <div class="h-screen  relative " id="panel1">
+
+        <div class="absolute bottom-[80%] sm:left-20 md:left-56  lg:top-10 lg:left-96 " id="circles">
+            <div class="absolute bg-gradient-to-bl from-red-400 to-yellow-600 h-72 w-72 lg:h-[50rem] lg:w-[50rem] circle top-12 left-[24%]  blur-lg lg:blur-xl opacity-40"
+                id="under_circle"> </div>
+            <div class="absolute bg-gradient-to-tr from-purple-600 to-yellow-300 h-96 w-96 lg:h-[50rem] lg:w-[50rem] circle top-11 left-1/4 "
+                id="main_circle">
+                <div
+                    class="circle absolute bg-gradient-to-bl from-gray-200 to-indigo-800 h-80 w-80 lg:h-[42rem] lg:w-[42rem] top-11 left-2 opacity-70 blur-sm">
                     <div
-                        class="circle absolute bg-gradient-to-bl from-gray-200 to-indigo-800 h-80 w-80 lg:h-[42rem] lg:w-[42rem] top-11 left-2 opacity-70">
-                        <div
-                            class="circle absolute bg-gradient-to-tl from-pink-300 opacity-90 h-60 w-60 lg:h-[30rem] lg:w-[30rem] right-24 -top-3 blur-md">
-                        </div>
+                        class="circle absolute bg-gradient-to-tl from-pink-300 opacity-90 h-60 w-60 lg:h-[30rem] lg:w-[30rem] right-24 -top-3 blur-md">
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="absolute bottom-20  sm:bottom-10 md:bottom-28 md:left-11 md:ml-8 lg:top-60 lg:left-20 grid grid-cols-3 sm:inline">
-                <h3 class="hidden sm:inline-block text-sm lg:text-base font-light  mb-12 opacity-80 md:tracking-widest lg:tracking-wider"
-                    id="name">Franciszek Otrębski
-                </h3>
-                <div class="sm:hidden absolute right-6 font-extralight md:font-light  bottom-32 rotate-90" id="name_sm">Franciszek Otrębski</div>
-                <div class="text-xl ml-16 mb-10 leading-tight sm:m-0 md:text-2xl md:leading-relaxed  lg:text-5xl lg:leading-normal  lg:tracking-tight col-span-2"
-                    id="text">
-                    <h1 class="mb-3 sm:m-0">I'm human being and web developer</h1>
-                    <p class="mb-6 sm:m-0">retired drug dealer, breath lover </p>
-                    <p>we can help each other</p>
-                </div>
+        <div
+            class="absolute bottom-0  sm:bottom-10 md:bottom-28 md:left-11 md:ml-8 lg:top-60 lg:left-20 grid grid-cols-3 sm:inline">
+            <h3 class="hidden sm:inline-block text-sm lg:text-base xl:text-lg font-light  mb-12 opacity-80 md:tracking-widest lg:tracking-wider"
+                id="name">Franciszek Otrębski
+            </h3>
+            <div class="sm:hidden absolute right-6 font-extralight md:font-light  bottom-32 rotate-90" id="name_sm">
+                Franciszek Otrębski</div>
+            <div class="text-xl ml-16 mb-10 leading-tight sm:m-0 md:text-2xl md:leading-relaxed  lg:text-5xl lg:leading-normal  lg:tracking-tight col-span-2"
+                id="text">
+                <h1 class="mb-3 sm:m-0">I'm a human being and web developer</h1>
+                <p class="mb-6 sm:m-0">retired drug dealer, breath & bread lover </p>
+                <p>we can help each otherrrrraa</p>
             </div>
+        </div>
 
-            <div class="flex translat flex-col items-end mr-5 pt-4 sm:mr-20 sm:pt-12 md:text-xl" id="buttonWrap">
+        <div class="flex flex-col sm:items-end lg:text-2xl sm:pr-20 items-center pt-12 sm:pt-12 md:text-xl" id="buttonWrap">
+            <div id="button1">
                 <button class="hover:text-gray-400 hover:translate-y-1 transform transition">projects</button>
-                <button class="hover:text-gray-400 hover:translate-y-1 transform transition" id="contact"> contact
+            </div>
+            <div id="button2">
+                <button class="hover:text-gray-400 hover:translate-y-1 transform transition pt-3 lg:pt-7" id="contact"> contact
                 </button>
             </div>
-
         </div>
-        <div class="  " id="panel2">
 
-        </div>
+
+
 
 
         <!-- <div class="h-screen w-screen bg-gray-600" id="panel"></div> -->
     </div>
+    <div class=" h-screen bg-[#082032] flex flex-col-reverse text-7xl  items-center justify-center animate-pulse"
+        id="panel2">
+        <p class="font-mono font-extrabold hover:animate-spin text-green-700">CHUJ</p>
+    </div>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="script.js"></script>
-  
+
 </body>
 
 </html>
