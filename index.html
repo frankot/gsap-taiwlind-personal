@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body class="text-gray-200 font-custom">
+    <div class="h-screen bg-[#082032] relative">
+        <div class="wrap">
+            <div class="absolute bg-gradient-to-bl from-red-400 to-yellow-600 h-96 w-96 circle top-12 left-[24%] blur-lg opacity-40"
+                id="under_circle"> </div>
+            <div class="absolute bg-gradient-to-tr from-purple-600 to-yellow-300 h-96 w-96 circle top-11 left-1/4 "
+                id="main_circle">
+                <div
+                    class="circle absolute bg-gradient-to-bl from-gray-200 to-indigo-800 h-80 w-80 top-11 left-2 opacity-70">
+                    <div
+                        class="circle absolute bg-gradient-to-tl from-pink-300 opacity-90 h-60 w-60 right-8 -top-3 blur-md">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+
+            </div>
+        
+        <main class="">
+            <div class="absolute top-44 left-20">
+                <h3 class="text-sm font-light text-gray-300 mb-12 tracking-wider" id="name">Franciszek Otrębski</h3>
+                <div class="text-2xl leading-normal  tracking-tight">
+                    <h1>I'm human being and a web developer</h1>
+                    <p>Retired drug dealer, breath lover </p>
+                    <p>We can help each other</p>
+                </div>
+            </div>
+            <div class="flex justify-end mr-20 pt-12 hover:text-gray-400">
+                <button class="" id="contact">Contact</button>
+            </div>
+        </main>
+    </div>
+
+
+    </div>
+    <div class="h-screen bg-gray-600">
+
+    </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+        gsap.from('.wrap', {
+            opacity: 0,
+            duration: 1.5,
+            x: 10
+        })
+        gsap.from('#name', {opacity: 0, duration: 1.75,  x: -50})
+        gsap.from('#contact', {opacity: 0, duration: 1.75,  x: 50})
+        gsap.from('#main_circle', {opacity: 0, duration: 1.75,  x: 30})
+        gsap.from('#under_circle', {opacity: 0, duration: 1.8,  x: 100})
+    </script>
+</body>
+
+</html>

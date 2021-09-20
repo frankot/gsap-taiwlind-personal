@@ -1,0 +1,21 @@
+{
+  "name": "jit2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "jit": "npx tailwindcss -i tailwind.css -o styles.css --watch",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.4",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.15"
+  },
+  "dependencies": {
+    "vite": "^2.5.8"
+  }
+}
